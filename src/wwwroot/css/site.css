@@ -1,0 +1,103 @@
+﻿:root {
+    --color-primary: #405F6A;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+    background: #FFF;
+    color: var(--color-primary);
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.center {
+    width: 100vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+    animation: fade-in ease 2s;
+    -webkit-animation: fade-in ease 2s;
+    -moz-animation: fade-in ease 2s;
+    -o-animation: fade-in ease 2s;
+    -ms-animation: fade-in ease 2s;
+}
+
+    .center * {
+        margin: auto;
+    }
+
+.body {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 0;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#header {
+    margin-bottom: 10px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+#content {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
