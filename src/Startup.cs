@@ -45,6 +45,8 @@ namespace Quay
 
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapRazorPages();
+
                 endpoints.MapFallbackToPage("", "/Index");
                 endpoints.MapFallbackToPage("{**url}", "/NotFound");
             });
